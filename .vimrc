@@ -87,11 +87,11 @@ set autoindent "indent automatic to current column
 imap jk <ESC>
 
 " Jeroen extra bracketing, very handy without plugins
-inoremap " ""<left>
-inoremap ' ''<left>
-inoremap ( ()<left>
-inoremap [ []<left>
-inoremap { {}<left>
-inoremap {<CR> {<CR>}<ESC>O<TAB>
-inoremap {;<CR> {<CR>};<ESC>O<TAB>
-
+" noremap " ""<left>
+" inoremap ' ''<left>
+" inoremap ( ()<left>
+" inoremap [ []<left>
+" inoremap { {}<left>
+" inoremap {<CR> {<CR>}<ESC>O<TAB>
+" inoremap {;<CR> {<CR>};<ESC>O<TAB>
+" inoremap <expr> ) strpart(getline('.'), col('.')-1, 1) == ")" ? "\<Right>" : ")"
