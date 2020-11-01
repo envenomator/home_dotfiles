@@ -116,3 +116,5 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+set default-terminal "screen.xterm-256color"
