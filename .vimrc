@@ -85,6 +85,9 @@ set shiftwidth=4
 set expandtab  "use spaces in stead of tab characters
 set autoindent "indent automatic to current column
 imap jk <ESC>
+" correct colors for use in tmux
+set background=dark
+set t_Co=256
 
 " Jeroen extra bracketing, very handy without plugins
 " noremap " ""<left>
