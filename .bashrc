@@ -118,3 +118,5 @@ if ! shopt -oq posix; then
 fi
 
 set default-terminal "screen.xterm-256color"
+
+export PATH="$PATH:/home/jeroen/Documents/source/cc65/bin"
