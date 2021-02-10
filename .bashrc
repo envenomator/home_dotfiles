@@ -119,4 +119,4 @@ fi
 
 set default-terminal "screen.xterm-256color"
 
-export PATH="$PATH:/home/jeroen/Documents/source/cc65/bin"
+export PATH="$PATH:/home/jeroen/Documents/source/cc65/bin:/home/jeroen/Documents/source/x16emu"
