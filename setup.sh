@@ -1,11 +1,11 @@
 #!/bin/bash
 
 # remove old dotfiles
-if [ -d "~/.vimrc" ]; then
+if [ -f "~/.vimrc" ]; then
     echo Removing old .vimrc file
     rm ~/.vimrc
 fi
-if [ -d "~/.bashrc" ]; then
+if [ -f "~/.bashrc" ]; then
     echo Removing old .bashrc file
     rm ~/.bashrc
 fi
