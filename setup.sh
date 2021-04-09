@@ -1,8 +1,14 @@
 #!/bin/bash
 
 # remove old dotfiles
-rm ~/.vimrc
-rm ~/.bashrc
+if [ -d "~/.vimrc" ]; then
+    echo Removing old .vimrc file
+    rm ~/.vimrc
+fi
+if [ -d "~/.bashrc" ]; then
+    echo Removing old .bashrc file
+    rm ~/.bashrc
+fi
 
 # link rc files
 ln -s ~/home_dotfiles/.vimrc ~/.vimrc
