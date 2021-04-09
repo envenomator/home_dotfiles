@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# remove old dotfiles
+rm ~/.vimrc
+rm ~/.bashrc
+
 # link rc files
 ln -s ~/home_dotfiles/.vimrc ~/.vimrc
 ln -s ~/home_dotfiles/.bashrc ~/.bashrc
