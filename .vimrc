@@ -98,3 +98,7 @@ set t_Co=256
 " inoremap {<CR> {<CR>}<ESC>O<TAB>
 " inoremap {;<CR> {<CR>};<ESC>O<TAB>
 " inoremap <expr> ) strpart(getline('.'), col('.')-1, 1) == ")" ? "\<Right>" : ")"
+filetype plugin indent on
+augroup filetypedetect
+    au BufNewFile,BufRead *.asm,*.s,*.inc set ft=asm_ca65
+augroup END

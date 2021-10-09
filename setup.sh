@@ -26,5 +26,6 @@ echo Installing new plugins from github..
 git clone --quiet --depth 1 https://github.com/spf13/vim-autoclose.git ~/.vim/pack/vendor/start/autoclose 
 git clone --quiet --depth 1 https://github.com/itchyny/lightline.vim.git ~/.vim/pack/vendor/start/lightline 
 git clone --quiet --depth 1 https://github.com/tpope/vim-surround.git ~/.vim/pack/vendor/start/vim-surround 
+git clone --quiet --depth 1 https://github.com/maxbane/vim-asm_ca65.git ~/.vim/pack/vendor/start/vim-asm_ca65
 
 echo Setup complete
