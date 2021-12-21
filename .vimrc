@@ -1,5 +1,5 @@
-syntax on " Turn on syntax highlighting
 set nocompatible " switch to vim functionality
+syntax on " Turn on syntax highlighting
 set shortmess+=I " Disable the default Vim startup message.
 set nowrap
 set number " Show line numbers.
@@ -15,8 +15,8 @@ set smartcase " case insensitive searching
 set incsearch " Enable searching as you type, rather than waiting till you press enter.
 set noerrorbells visualbell t_vb= " Disable audible bell because it's annoying.
 set background=dark " correct colors for use in tmux
-nmap Q <Nop> " 'Q' in normal mode enters Ex mode. You almost never want this.
-imap jk <ESC> 
+nmap Q <Nop>" 'Q' in normal mode enters Ex mode. You almost never want this.
+imap jk <Esc>
 
 call plug#begin('~/.vim/plugged')
 Plug 'spf13/vim-autoclose'
@@ -28,3 +28,5 @@ call plug#end()
 augroup filetypedetect
    au BufNewFile,BufRead *.asm,*.s,*.inc set ft=asm_ca65
 augroup END
+
+
