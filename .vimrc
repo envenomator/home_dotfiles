@@ -81,6 +81,7 @@ inoremap <Down>  <ESC>:echoe "Use j"<CR>
 
 " Jeroen extras
 set tabstop=4
+set softtabstop=4
 set shiftwidth=4
 set expandtab  "use spaces in stead of tab characters
 set autoindent "indent automatic to current column
