@@ -16,8 +16,8 @@ set incsearch " Enable searching as you type, rather than waiting till you press
 set noerrorbells visualbell t_vb= " Disable audible bell because it's annoying.
 set background=dark " correct colors for use in tmux
 nmap Q <Nop>" 'Q' in normal mode enters Ex mode. You almost never want this.
-imap jk <Esc>
-
+inoremap ii <Esc>
+xnoremap ii <Esc>
 call plug#begin('~/.vim/plugged')
 Plug 'spf13/vim-autoclose'
 Plug 'itchyny/lightline.vim'
