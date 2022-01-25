@@ -4,7 +4,9 @@ set shortmess+=I " Disable the default Vim startup message.
 set nowrap
 set number " Show line numbers.
 set relativenumber
-set tabstop=4 softtabstop=4 shiftwidth=4
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
 set expandtab  "use spaces in stead of tab characters
 set smartindent
 set laststatus=2 " Always show the status line at the bottom, even if you only have one window open.
@@ -29,4 +31,7 @@ augroup filetypedetect
    au BufNewFile,BufRead *.asm,*.s,*.inc set ft=asm_ca65
 augroup END
 
-
+augroup python
+  autocmd!
+  autocmd FileType python setlocal softtabstop=2
+augroup END
