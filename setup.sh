@@ -9,7 +9,10 @@ if [ -f ~/".bashrc" ]; then
     echo Removing old .bashrc
     rm ~/.bashrc
 fi
-
+if [ -f ~/".tmux.conf" ]; then
+    echo Removing old .tmux.conf
+    rm ~/.tmux.conf
+fi
 # link rc files
 ln -s ~/home_dotfiles/.vimrc ~/.vimrc
 ln -s ~/home_dotfiles/.bashrc ~/.bashrc
