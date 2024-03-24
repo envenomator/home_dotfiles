@@ -25,6 +25,7 @@ Plug 'spf13/vim-autoclose'
 Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-surround'
 Plug 'maxbane/vim-asm_ca65'
+Plug 'christoomey/vim-tmux-navigator'
 call plug#end()
 
 augroup filetypedetect
