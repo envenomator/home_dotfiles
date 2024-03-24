@@ -33,6 +33,9 @@ augroup filetypedetect
    au BufNewFile,BufRead *.asm,*.s,*.inc set ft=asm_ca65
 augroup END
 
+" Exit Vim if NERDTree is the only window remaining in the only tab.
+autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
+
 augroup python
   autocmd!
   autocmd FileType python setlocal softtabstop=4
