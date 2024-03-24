@@ -13,6 +13,7 @@ fi
 # link rc files
 ln -s ~/home_dotfiles/.vimrc ~/.vimrc
 ln -s ~/home_dotfiles/.bashrc ~/.bashrc
+ln -s ~/home_dotfiles/.tmux.conf ~/.tmux.conf
 
 # install plugin manager
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
